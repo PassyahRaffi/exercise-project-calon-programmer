@@ -1,0 +1,324 @@
+:root {
+    --main-color: #2c2c2c;
+    --second-color: #636363;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+/* header */
+.pages-wraper {
+    margin: 0 168px 0;
+}
+
+header {
+    width: 100%;
+    height: 7rem;
+
+}
+
+.container-header {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 4rem 1rem 0;
+    height: 50px;
+    gap: 1rem;
+}
+
+.navbar-logo {
+    width: 85%;
+}
+
+.navbar-logo a img {
+    width: 168.9px;
+}
+
+
+.navbar-content ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+/* .navbar-content ul:hover {
+    font-weight: 400;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+} */
+
+.navbar-content ul li {
+    color: var(--second-color);
+}
+
+.navbar-content ul li a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* content */
+
+.container-content {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.row .bio img {
+    width: 625.5px;
+    object-fit: cover;
+}
+
+.row .bio p {
+    color: #636363;
+    margin: 0 0 40px;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 1.5px;
+}
+
+.main-h1 {
+    color: var(--main-color);
+    font-size: 38px;
+    font-family: 'PT Serif', sans-serif;
+    font-weight: 400;
+    line-height: 48px;
+    margin: 7rem 0 3.5rem;
+    padding: 0 1rem;
+    width: 100%;
+
+}
+
+.bio {
+    width: 660px;
+    padding: 0 1rem;
+}
+
+.about {
+    width: 470px;
+}
+
+
+.about h2 {
+
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.about .exhibitions,
+.about .literary,
+.about .awards {
+    margin-top: 20px;
+    color: var(--main-color);
+}
+
+.row {
+    display: flex;
+    gap: 5rem;
+}
+
+
+h2,
+.awards,
+.literary {
+    font-family: 'PT Serif', sans-serif;
+    margin: 0 0 15px;
+    font-size: 24px;
+}
+
+
+
+.name {
+    font-weight: 400;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.container-content .about {
+    padding: 0 1rem;
+    font-size: 14px;
+    color: var(--second-color);
+    font-family: 'roboto' sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    font-size: 16px;
+    color: #2c2c2c;
+    text-decoration: none;
+    text-align: center;
+    width: 12px;
+}
+
+.row .bio .button {
+    background-color: #2c2c2c;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    width: 125.4px;
+    height: 18px;
+    padding: 8px 16px;
+}
+
+/* .container-button {
+
+    height: 20px;
+}
+ */
+.email {
+    font-weight: 400;
+
+}
+
+.i {
+    width: 16px
+}
+
+li {
+    list-style: none;
+    line-height: 1.3rem;
+    margin-bottom: 10px;
+    /* font-weight: 300; */
+}
+
+/* ul .ul-exhibition {
+    letter-spacing: 1px;
+} */
+
+/* ---FOOTER---- */
+
+footer {
+    width: 100%;
+    padding: 80px 0 40px;
+}
+
+.footer-wrapper {
+    display: flex;
+    margin-right: 168px;
+}
+
+.footer-copyrights {
+    width: 50%;
+    text-align: start;
+}
+
+.footer-socials {
+    width: 50%;
+    position: relative;
+}
+
+.footer-copyrights p {
+    width: auto;
+}
+
+.instagram {
+    position: absolute;
+    right: 0;
+
+}
+
+
+/* MEDIA QUERIES */
+/* LAPTOP!! */
+@media (max-width: 1366px) {
+    html {
+        font-size: 70%;
+    }
+
+    .pages-wraper {
+        margin: 0 80px 0;
+    }
+
+    .main-h1 {
+        width: 100%;
+        font-size: 29px;
+    }
+
+    .row .bio img {
+        width: 100%;
+    }
+
+    .bio {
+        /* width: 600px; */
+        width: 100%;
+        min-width: 300px;
+    }
+
+    .about {
+        /* width: 400px; */
+        width: 100%;
+        min-width: 300px;
+    }
+
+    .row .bio p {
+        line-height: 24px;
+    }
+}
+
+/* TABLET!! */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .pages-wraper {
+        margin: 0 20px 0;
+    }
+
+    .main-h1 {
+        font-size: 22px;
+        line-height: 38px;
+
+    }
+
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .row .bio img {
+        width: 100%;
+
+    }
+
+    .about {
+        padding-top: 2rem;
+    }
+}
+
+/* MOBILE PHONE! */
+
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+
+    .pages-wraper {
+        margin: 0 35px 0;
+    }
+
+    .main-h1 {
+        font-size: 19px;
+        line-height: 24px;
+
+    }
+}
