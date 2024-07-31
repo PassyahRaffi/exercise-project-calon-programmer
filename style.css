@@ -18,14 +18,18 @@ body {
 }
 
 /* header */
-.pages-wraper {
+/* body .pages-wraper {
     margin: 0 168px 0;
 }
-
+ */
 header {
     width: 100%;
     height: 7rem;
 
+}
+
+.container-wrapper {
+    margin: 0 168px 0;
 }
 
 .container-header {
@@ -244,7 +248,7 @@ footer {
         font-size: 70%;
     }
 
-    .pages-wraper {
+    .container-wrapper {
         margin: 0 80px 0;
     }
 
@@ -280,7 +284,7 @@ footer {
         font-size: 62.5%;
     }
 
-    .pages-wraper {
+    .container-wrapper {
         margin: 0 20px 0;
     }
 
@@ -312,8 +316,8 @@ footer {
         font-size: 55%;
     }
 
-    .pages-wraper {
-        margin: 0 35px 0;
+    .container-wrapper {
+        margin: 0 15px 0;
     }
 
     .main-h1 {
