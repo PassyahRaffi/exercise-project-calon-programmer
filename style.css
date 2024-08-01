@@ -209,38 +209,49 @@ li {
 } */
 
 /* ---FOOTER---- */
-
+/* FOOTER STYLE */
 footer {
-    width: 100%;
+    width: 82.5%;
     padding: 80px 0 40px;
-    
 }
 
-.footer-wrapper {
+.margin-pages{
+    margin: 0 7rem;
+}
+
+.footer {
     display: flex;
-    margin-right: 168px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footer-copyrights {
-    width: 50%;
+/* p{
+    width: 100px;
     text-align: start;
+    font-size: 14px;
+    
+} */
+
+.copyright {
+    width: auto;
+    height: auto;
 }
 
-.footer-socials {
+a{
     width: 50%;
     position: relative;
 }
 
-.footer-copyrights p {
+/* .footer-copyrights p {
     width: auto;
-}
+} */
 
-.instagram {
+/* .instagram {
     position: absolute;
     right: 0;
+    font-size: 14px;
 
-}
-
+} */
 
 /* MEDIA QUERIES */
 /* LAPTOP!! */
@@ -277,6 +288,10 @@ footer {
     .row .bio p {
         line-height: 24px;
     }
+
+    .margin-pages{
+        margin: 0 4rem;
+    }
 }
 
 /* TABLET!! */
@@ -295,7 +310,9 @@ footer {
 
     }
 
-
+    .margin-pages{
+        margin: 0 3.5rem;
+    }
     .row {
         flex-wrap: wrap;
     }
