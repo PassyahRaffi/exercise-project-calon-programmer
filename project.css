@@ -85,22 +85,17 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-   
-    
-    
-   
     /* display: flex; */
-    
     display: none;
-    
-}
-
-.column .photo-peta:hover  {
-    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
-    opacity: .3;
+    background-color: #fff;
+    opacity: .8;
+    z-index: 50;
+}
+
+.column .photo-peta:hover .hover {
+    display: flex;
 }
 
 /* .photo:hover::after {
