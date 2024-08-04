@@ -146,6 +146,9 @@ a {
     position: relative;
 }
 
+.instagram {
+    color: #2c2c2c;
+}
 /* .footer-copyrights p {
     width: auto;
 } */
@@ -202,7 +205,15 @@ a {
     footer {
         width: 92%;
     }
-
+    .photo-gallery {
+        display: block;
+    
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        
+    }
 
 
 }
