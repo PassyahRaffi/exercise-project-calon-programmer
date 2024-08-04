@@ -73,6 +73,7 @@ body {
 .animation-photo {
     width: 100%;
     display: inline-table;
+    color: black;
 }
 
 .photo-peta {
