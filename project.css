@@ -117,48 +117,6 @@ body {
 
 
 
-/* FOOTER STYLE */
-footer {
-    width: 82.5%;
-    padding: 80px 0 40px;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* p{
-    width: 100px;
-    text-align: start;
-    font-size: 14px;
-    
-} */
-
-.copyright {
-    width: auto;
-    height: auto;
-}
-
-a {
-    width: 50%;
-    position: relative;
-}
-
-.instagram {
-    color: #2c2c2c;
-}
-/* .footer-copyrights p {
-    width: auto;
-} */
-
-/* .instagram {
-    position: absolute;
-    right: 0;
-    font-size: 14px;
-
-} */
 
 
 
@@ -176,9 +134,7 @@ a {
 
 
 
-    footer {
-        width: 77%;
-    }
+    
 
 }
 
@@ -188,9 +144,7 @@ a {
         margin: 0 3rem;
     }
 
-    footer {
-        width: 85%;
-    }
+   
 
 
 }
@@ -202,18 +156,12 @@ a {
         margin: 0 1rem;
     }
 
-    footer {
-        width: 92%;
-    }
+   
     .photo-gallery {
         display: block;
     
     }
-    .footer{
-        display: block;
-        text-align: center;
-        
-    }
+    
 
 
 }
