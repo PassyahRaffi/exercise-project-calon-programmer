@@ -1,0 +1,214 @@
+:root {
+    --main-color: #2c2c2c;
+    --second-color: #636363;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 6000px;
+}
+
+nav {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    width: 100%;
+    /* display: flex; */
+}
+
+.nav {
+    overflow: hidden;
+    width: 100%;
+    /* top: 0; */
+    position: fixed;
+    /* padding: 0 20px; */
+    background-color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.1px 1px #808080;
+}
+
+.nav .logo {
+    font-size: 1.rem;
+    width: 60%;
+    left: 3px;
+    position: relative;
+    top: 8px;
+}
+
+.nav .logo img {
+    padding-top: 1px;
+    width: 120px;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #808080;
+    font-family: sans-serif;
+    padding: 0px 10px;
+    transition: 0.15s;
+}
+
+.nav a:hover {
+    color: black;
+}
+
+#nav-button {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+/* bagian body */
+.page-title {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+h1 .heading {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 4 8px;
+
+}
+
+h1 {
+    font-family: 'PT serif', sans-serif;
+    margin: 0px 0px 15px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: #636363;
+    margin-bottom: 15px;
+}
+
+/* img */
+/* img grid */
+
+.container {
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+
+}
+
+.title {
+    margin-bottom: 2rem;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 4.5rem;
+
+}
+
+.animation-photo:hover {
+    width: 100%;
+    background: #fff;
+    z-index: 4;
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+/* responsive */
+@media only screen and (max-width: 765px) and (orientation: portrait) {
+    .nav {
+        align-items: center;
+    }
+
+    .nav .logo {
+        width: 30%;
+        position: absolute;
+        left: 0px;
+        padding-left: 15px;
+    }
+
+    .nav .logo img {
+        padding-top: 3px;
+    }
+
+    .nav ul {
+        position: fixed;
+        top: 44px;
+        width: 100%;
+        background: #000;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .nav li {
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .nav a {
+        width: 100%;
+        display: block;
+    }
+
+    /* nav li:hover {
+        background:  #11ee48;
+    } */
+
+    label {
+        display: block;
+        padding: 0px 10px;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 2%;
+    }
+
+    label:hover {
+        color:  #fff;
+    }
+
+    nav #nav-button:checked~ul {
+        max-height: 100%;
+        transition: all 1s ease-out;
+    }
+
+    h1 .heading {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    p {
+        margin: 0px 0px 10px;
+    }
+
+    .photo-gallery {
+        flex-wrap: wrap;
+    }
+}
